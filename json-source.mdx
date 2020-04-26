@@ -1,0 +1,53 @@
+# Source Content from JSON Within Gatsby
+
+Setup Gatsby to source data from JSON files directly into a page or component.
+
+This recipe installs and configures all the necessary NPM packages and Gatsby plugins to enable sourcing of content from JSON files.
+
+---
+
+## Install NPM Packages
+
+<NPMPackage name="gatsby-source-filesystem" />
+
+<NPMPackage name="gatsby-transformer-json" />
+
+---
+
+# Install Gatsby Plugins
+
+First `gatsby-source-filesystem` to point to our JSON files which we'll keep in the `/src/data` directory.
+
+<GatsbyPlugin
+  name="gatsby-source-filesystem"
+  key="src/data"
+  options={{
+    path: `./src/data/`,
+  }}
+/>
+
+---
+
+Then the `gatsby-transformer-json` plugin.
+
+<GatsbyPlugin name="gatsby-transformer-json" />
+
+---
+
+Then we'll add an example JSON file and page to play with.
+
+<File
+  path="src/pages/test-page.js"
+  content="https://gist.githubusercontent.com/duffn/5c3d76ff15b373af191f0d46b8ed1ff6/raw/dd3ad742fd38a4f51af48db848ecd040f08fe105/test-page-json.js"
+/>
+
+<File
+  path="src/data/test-data.yaml"
+  content="https://gist.githubusercontent.com/duffn/5c3d76ff15b373af191f0d46b8ed1ff6/raw/3a7ff3218a0ac5deee2162a98844195879968d58/test-data-json.json"
+/>
+
+---
+
+You're now ready to start sourcing data from JSON files in your Gatsby site!
+
+Read more about the `gatsby-transformer-json` plugin at https://www.gatsbyjs.org/packages/gatsby-transformer-json/.
