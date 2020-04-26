@@ -20,7 +20,7 @@ module.exports = {
         path: `./src/data`,
       },
     },
-    `gatsby-transformer-yaml`,
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

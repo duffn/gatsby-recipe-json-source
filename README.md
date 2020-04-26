@@ -1,13 +1,13 @@
-# gatsby-recipe-yaml-source
+# gatsby-recipe-json-source
 
-Set up Gatsby to source data from YAML files directly into a page or component.
+Set up Gatsby to source data from JSON files directly into a page or component.
 
-[Demo](https://gatsby-recipe-yaml-source.netlify.app/)
+[Demo](https://gatsby-recipe-json-source.netlify.app/)
 
 ## Usage
 
 ```
-gatsby recipes https://raw.githubusercontent.com/duffn/gatsby-recipe-yaml-source/master/yaml-source.mdx
+gatsby recipes https://raw.githubusercontent.com/duffn/gatsby-recipe-json-source/master/json-source.mdx
 ```
 
 ## More
